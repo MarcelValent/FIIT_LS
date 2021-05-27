@@ -1,0 +1,78 @@
+//inicializacia a overovanie spravnosti vstupu
+load=4
+store 11
+read 1
+load 1
+sub=10000
+jgzero Zlyvstup
+load 1
+mul= -1
+jgzero Zlyvstup
+load 1
+store 3
+
+//delenie vstupu na jednotlive cifry
+delenie:
+load 1
+div=10
+mul=10
+store 2
+load 1
+sub 2
+store *11
+load 11
+add=1
+store 11
+load 1
+div=10
+store 1
+jgzero delenie
+
+//kontrola, kolko ciferne cislo bolo na vstupe
+load 11
+sub=5
+jzero jednociferne
+load 11
+sub=6
+jzero dvojciferne
+load 11
+sub=7
+jzero trojciferne
+load 11
+sub=8
+jzero stvorciferne
+load 11
+sub=9
+jzero patciferne
+
+//vypis jednotlivych cisel na pasku
+jednociferne:
+write 4
+accept
+dvojciferne:
+write 4
+write 5
+accept
+trojciferne:
+write 6
+write 5
+write 4
+accept
+stvorciferne:
+write 6
+write 5
+write 4
+write 7
+accept
+patciferne:
+write 6
+write 5
+write 4
+write 8
+write 7
+accept
+
+//odmietnutie pripadneho zleho vstupu
+Zlyvstup:
+reject 
+halt
