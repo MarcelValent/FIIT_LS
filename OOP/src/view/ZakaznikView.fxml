@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ZakaznikViewController">
+   <children>
+      <Button layoutX="29.0" layoutY="274.0" mnemonicParsing="false" onAction="#gotoOplachumytie" prefHeight="63.0" prefWidth="123.0" text="Opláchnutie" />
+      <Button layoutX="177.0" layoutY="274.0" mnemonicParsing="false" onAction="#gotoBasicumytie" prefHeight="63.0" prefWidth="123.0" text="Obyčajné umytie" />
+      <Button layoutX="318.0" layoutY="274.0" mnemonicParsing="false" onAction="#gotoStandartumytie" prefHeight="63.0" prefWidth="123.0" text="Štandartné umytie" />
+      <Button layoutX="456.0" layoutY="274.0" mnemonicParsing="false" onAction="#gotoPremiumwash" prefHeight="63.0" prefWidth="123.0" text="PremiumWash" />
+
+      <Label fx:id="labelzakaznik" alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="241.0" prefHeight="17.0" prefWidth="553.0" textAlignment="CENTER" />
+      <ImageView layoutX="468.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/premium.jpg" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="330.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/standartumytie.jpg" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="189.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/obycumytie.jpg" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="41.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/oplachnutie.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
