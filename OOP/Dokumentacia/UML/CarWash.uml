@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/valen/IdeaProjects/CarWash_final/src</OriginalElement>
+  <nodes>
+    <node x="406.03125" y="166.0">model.Odhmyzovac</node>
+    <node x="1067.1687091503268" y="166.0">view.PopUp</node>
+    <node x="94.03043300653587" y="269.0">controller.ManagerLoginController</node>
+    <node x="631.5761846405229" y="269.0">model.Umyvacistroj</node>
+    <node x="1056.1687091503268" y="269.0">controller.Threading</node>
+    <node x="198.03125" y="166.0">model.MyCustomException</node>
+    <node x="918.03125" y="166.0">model.CistaVoda</node>
+    <node x="990.1374591503268" y="0.0">model.Storage.Storage</node>
+    <node x="128.03043300653587" y="350.0">view.ManazerLogin</node>
+    <node x="601.0761846405229" y="350.0">controller.ZakaznikViewController</node>
+    <node x="1058.03125" y="81.0">app.Aplikacia</node>
+    <node x="815.03125" y="166.0">model.Vosk</node>
+    <node x="95.53043300653587" y="431.0">controller.AplikaciaViewController</node>
+    <node x="524.1823937908497" y="81.0">model.Surovina</node>
+    <node x="564.03125" y="166.0">model.Jarovavoda</node>
+    <node x="711.03125" y="166.0">model.Pena</node>
+    <node x="33.0" y="166.0">view.ManagerView</node>
+    <node x="0.0" y="81.0">controller.ManagerViewController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="controller.ZakaznikViewController" target="model.Umyvacistroj" relationship="CREATE">
+      <point x="0.0" y="-15.5" />
+      <point x="705.0761846405229" y="325.0" />
+      <point x="734.3261846405229" y="325.0" />
+      <point x="34.25" y="15.5" />
+    </edge>
+    <edge source="model.Umyvacistroj" target="model.Pena" relationship="CREATE">
+      <point x="8.5625" y="-15.5" />
+      <point x="708.6386846405229" y="218.0" />
+      <point x="753.03125" y="218.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="model.CistaVoda" target="model.Surovina" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="977.53125" y="144.0" />
+      <point x="747.6374591503268" y="144.0" />
+      <point x="747.6374591503268" y="134.0" />
+      <point x="605.9323937908497" y="134.0" />
+      <point x="27.25" y="15.5" />
+    </edge>
+    <edge source="model.Umyvacistroj" target="model.CistaVoda" relationship="CREATE">
+      <point x="42.8125" y="-15.5" />
+      <point x="742.8886846405229" y="238.0" />
+      <point x="977.53125" y="238.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="model.Pena" target="model.Surovina" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="753.03125" y="144.0" />
+      <point x="747.6374591503268" y="144.0" />
+      <point x="747.6374591503268" y="134.0" />
+      <point x="605.9323937908497" y="134.0" />
+      <point x="27.25" y="15.5" />
+    </edge>
+    <edge source="controller.Threading" target="view.PopUp" relationship="CREATE">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="model.Umyvacistroj" target="model.Odhmyzovac" relationship="CREATE">
+      <point x="-25.6875" y="-15.5" />
+      <point x="674.3886846405229" y="228.0" />
+      <point x="475.03125" y="228.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="view.ManagerView" target="controller.ManagerViewController" relationship="DEPENDENCY">
+      <point x="-35.75" y="-15.5" />
+      <point x="68.75" y="144.0" />
+      <point x="52.25" y="144.0" />
+      <point x="-52.25" y="15.5" />
+    </edge>
+    <edge source="controller.ManagerViewController" target="view.ManagerView" relationship="DEPENDENCY">
+      <point x="52.25" y="15.5" />
+      <point x="156.75" y="144.0" />
+      <point x="140.25" y="144.0" />
+      <point x="35.75" y="-15.5" />
+    </edge>
+    <edge source="view.ManazerLogin" target="controller.ManagerLoginController" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="model.Vosk" target="model.Surovina" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="856.53125" y="144.0" />
+      <point x="747.6374591503268" y="144.0" />
+      <point x="747.6374591503268" y="134.0" />
+      <point x="605.9323937908497" y="134.0" />
+      <point x="27.25" y="15.5" />
+    </edge>
+    <edge source="model.Umyvacistroj" target="model.Surovina" relationship="TO_ONE">
+      <point x="-42.8125" y="-15.5" />
+      <point x="657.2636846405229" y="238.0" />
+      <point x="395.53125" y="238.0" />
+      <point x="395.53125" y="134.0" />
+      <point x="551.4323937908497" y="134.0" />
+      <point x="-27.25" y="15.5" />
+    </edge>
+    <edge source="controller.AplikaciaViewController" target="view.ManazerLogin" relationship="CREATE">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="controller.ZakaznikViewController" target="model.Umyvacistroj" relationship="TO_ONE">
+      <point x="-69.33333333333331" y="-15.5" />
+      <point x="635.7428513071895" y="325.0" />
+      <point x="665.8261846405229" y="325.0" />
+      <point x="-34.25" y="15.5" />
+    </edge>
+    <edge source="model.Umyvacistroj" target="model.Jarovavoda" relationship="CREATE">
+      <point x="-8.5625" y="-15.5" />
+      <point x="691.5136846405229" y="218.0" />
+      <point x="627.53125" y="218.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="controller.ManagerViewController" target="model.Storage.Storage" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="104.5" y="56.0" />
+      <point x="1042.1374591503268" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="controller.ZakaznikViewController" target="controller.Threading" relationship="CREATE">
+      <point x="69.33333333333331" y="-15.5" />
+      <point x="774.4095179738562" y="325.0" />
+      <point x="1115.6687091503268" y="325.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="model.Umyvacistroj" target="model.Storage.Storage" relationship="DEPENDENCY">
+      <point x="59.9375" y="-15.5" />
+      <point x="760.0136846405229" y="248.0" />
+      <point x="1047.53125" y="248.0" />
+      <point x="1047.53125" y="56.0" />
+      <point x="1042.1374591503268" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="model.Jarovavoda" target="model.Surovina" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="627.53125" y="144.0" />
+      <point x="747.6374591503268" y="144.0" />
+      <point x="747.6374591503268" y="134.0" />
+      <point x="605.9323937908497" y="134.0" />
+      <point x="27.25" y="15.5" />
+    </edge>
+    <edge source="model.Umyvacistroj" target="model.MyCustomException" relationship="CREATE">
+      <point x="-59.9375" y="-15.5" />
+      <point x="640.1386846405229" y="248.0" />
+      <point x="291.53125" y="248.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="app.Aplikacia" target="model.Storage.Storage" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="1114.53125" y="56.0" />
+      <point x="1042.1374591503268" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="model.Odhmyzovac" target="model.Surovina" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="475.03125" y="144.0" />
+      <point x="747.6374591503268" y="144.0" />
+      <point x="747.6374591503268" y="134.0" />
+      <point x="605.9323937908497" y="134.0" />
+      <point x="27.25" y="15.5" />
+    </edge>
+    <edge source="model.Umyvacistroj" target="model.Vosk" relationship="CREATE">
+      <point x="25.6875" y="-15.5" />
+      <point x="725.7636846405229" y="228.0" />
+      <point x="856.53125" y="228.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="controller.ManagerLoginController" target="view.ManagerView" relationship="CREATE">
+      <point x="-53.5" y="-15.5" />
+      <point x="147.53043300653587" y="248.0" />
+      <point x="104.5" y="248.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="controller.ManagerLoginController" target="model.MyCustomException" relationship="CREATE">
+      <point x="53.5" y="-15.5" />
+      <point x="254.53043300653587" y="248.0" />
+      <point x="291.53125" y="248.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8499999999999999" showDependencies="true" x="565.8260869565217" y="246.39130434782606" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
